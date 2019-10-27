@@ -1,0 +1,18 @@
+@import './styles/reset.scss';
+@import './styles/typography.scss';
+@import './styles/responsive.scss';
+@import './styles/mixins.scss';
+
+
+
+@import './styles/app.scss';
+
+
+body {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        font-family: $primary_font;
+        font-weight: 400;
+        line-height: 1.5em;  
+        background: $lightblue;
+        z-index: 1;
+}

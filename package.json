@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint --fix || true"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "core-js": "^3.3.2",
+    "jsonp": "^0.2.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -43,7 +45,11 @@
     }
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions"
+    "> 0.3%",
+    "last 7 versions",
+    "Android >= 4",
+    "Firefox >= 20",
+    "iOS >= 8",
+    "ie > 9"
   ]
 }
